@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EventRig AU - Local AV setup recommendations</title>
+    <meta
+      name="description"
+      content="EventRig AU recommends lighting, sound and local Australian suppliers for weddings, parties, corporate events, DJs and small stages."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="global-nav" aria-label="Global">
+      <a class="brand-mark" href="#top" aria-label="EventRig AU home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>EventRig AU</span>
+      </a>
+      <nav class="global-links" aria-label="Primary">
+        <a href="#advisor">Advisor</a>
+        <a href="#suppliers">Suppliers</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#quotes">Quotes</a>
+      </nav>
+      <a class="nav-action" href="#advisor">Start</a>
+    </header>
+
+    <div class="sub-nav" aria-label="Product">
+      <a class="sub-title" href="#top">AV quote intelligence</a>
+      <div class="sub-links">
+        <a href="#advisor">Setup</a>
+        <a href="#suppliers">Matches</a>
+        <a href="#pricing">Plans</a>
+        <a class="button button-small" href="#quotes">Get quotes</a>
+      </div>
+    </div>
+
+    <main id="top">
+      <section class="hero product-tile-light" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Australia-wide AV planning</p>
+          <h1 id="hero-title">EventRig AU</h1>
+          <p class="hero-lead">
+            A calmer way to choose the right lighting, sound and local suppliers for
+            weddings, parties, corporate events and small stages.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#advisor">Plan a setup</a>
+            <a class="button button-secondary" href="#suppliers">View supplier logic</a>
+          </div>
+        </div>
+
+        <div class="product-render" aria-label="EventRig AU app preview">
+          <div class="device-frame">
+            <div class="device-toolbar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="device-content">
+              <div class="preview-panel preview-left">
+                <p class="mini-label">Recommended setup</p>
+                <h2>Sydney wedding, 120 guests</h2>
+                <div class="meter">
+                  <span style="width: 82%"></span>
+                </div>
+                <div class="kit-row">
+                  <span class="kit-icon speaker-icon"></span>
+                  <div>
+                    <strong>2 x 12-inch PA speakers</strong>
+                    <p>Speech, background music and dance floor coverage.</p>
+                  </div>
+                </div>
+                <div class="kit-row">
+                  <span class="kit-icon light-icon"></span>
+                  <div>
+                    <strong>12 x wireless uplights</strong>
+                    <p>Warm perimeter wash for reception rooms.</p>
+                  </div>
+                </div>
+                <div class="kit-row">
+                  <span class="kit-icon mic-icon"></span>
+                  <div>
+                    <strong>2 x wireless microphones</strong>
+                    <p>Ceremony, speeches and MC handover.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="preview-panel preview-right">
+                <p class="mini-label">Local supplier matches</p>
+                <div class="supplier-mini">
+                  <strong>Harbour AV Hire</strong>
+                  <span>Sydney - Hire - from $890</span>
+                </div>
+                <div class="supplier-mini">
+                  <strong>Store DJ</strong>
+                  <span>Retail - audio alternatives</span>
+                </div>
+                <div class="supplier-mini">
+                  <strong>Wedding Glow Co</strong>
+                  <span>Lighting - quote-ready</span>
+                </div>
+                <a class="button button-small" href="#quotes">Request package quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advisor-section product-tile-parchment" id="advisor">
+        <div class="section-heading">
+          <p class="eyebrow">Setup advisor</p>
+          <h2>Tell it what you are planning.</h2>
+          <p>
+            The recommendation engine maps event needs to equipment types, then
+            matches those types with Australian supplier inventory.
+          </p>
+        </div>
+
+        <div class="advisor-layout">
+          <form class="advisor-form" id="advisorForm">
+            <label>
+              <span>City</span>
+              <select id="city" name="city">
+                <option>Sydney</option>
+                <option>Melbourne</option>
+                <option>Brisbane</option>
+                <option>Perth</option>
+                <option>Adelaide</option>
+                <option>Canberra</option>
+                <option>Gold Coast</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Event type</span>
+              <select id="eventType" name="eventType">
+                <option value="wedding">Wedding</option>
+                <option value="party">Party</option>
+                <option value="corporate">Corporate event</option>
+                <option value="dj">DJ show</option>
+                <option value="stage">Small stage</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Guests</span>
+              <input id="guests" name="guests" type="number" min="20" max="2000" step="10" value="120" />
+            </label>
+
+            <label>
+              <span>Venue size</span>
+              <select id="venue" name="venue">
+                <option value="small">Small room</option>
+                <option value="medium" selected>Medium venue</option>
+                <option value="large">Large hall</option>
+                <option value="outdoor">Outdoor</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Vibe</span>
+              <select id="vibe" name="vibe">
+                <option value="soft">Premium and soft</option>
+                <option value="club">Club energy</option>
+                <option value="stage">Stage performance</option>
+                <option value="brand">Brand launch</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Budget</span>
+              <select id="budget" name="budget">
+                <option value="500">Under $500</option>
+                <option value="1000">$500 - $1,000</option>
+                <option value="2500" selected>$1,000 - $2,500</option>
+                <option value="5000">$2,500+</option>
+              </select>
+            </label>
+          </form>
+
+          <aside class="recommendation" aria-live="polite">
+            <div class="result-topline">
+              <p class="mini-label">Recommended package</p>
+              <h3 id="resultTitle">Balanced wedding rig</h3>
+              <p id="resultSummary"></p>
+            </div>
+
+            <div class="result-grid">
+              <section>
+                <h4>Lighting</h4>
+                <ul id="lightingList"></ul>
+              </section>
+              <section>
+                <h4>Audio</h4>
+                <ul id="audioList"></ul>
+              </section>
+            </div>
+
+            <div class="budget-strip">
+              <span>Estimated range</span>
+              <strong id="budgetRange">$1,100 - $1,900</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="supplier-section product-tile-dark" id="suppliers">
+        <div class="section-heading section-heading-dark">
+          <p class="eyebrow">Supplier matching</p>
+          <h2>From equipment types to local options.</h2>
+          <p>
+            Recommended items connect to supplier products, hire packages and
+            quote-ready partners in the selected city.
+          </p>
+        </div>
+
+        <div class="supplier-grid" id="supplierGrid"></div>
+      </section>
+
+      <section class="data-section product-tile-light">
+        <div class="split-copy">
+          <div>
+            <p class="eyebrow">Data model</p>
+            <h2>Three tables make the product work.</h2>
+          </div>
+          <p>
+            Equipment types stay stable, supplier products change over time, and
+            partners decide which cities, categories and budgets they want to receive.
+          </p>
+        </div>
+
+        <div class="utility-grid">
+          <article>
+            <span class="table-name">equipment_types</span>
+            <h3>Standard rig language</h3>
+            <p>PA speakers, subwoofers, uplights, moving heads, wireless microphones and staging classes.</p>
+          </article>
+          <article>
+            <span class="table-name">supplier_products</span>
+            <h3>Real inventory</h3>
+            <p>Hire packages, retail products, price type, service cities, product links and last checked dates.</p>
+          </article>
+          <article>
+            <span class="table-name">suppliers</span>
+            <h3>Local partners</h3>
+            <p>ABN status, category fit, lead email, paid placement, service radius and response quality.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="pricing-section product-tile-parchment" id="pricing">
+        <div class="section-heading">
+          <p class="eyebrow">Revenue</p>
+          <h2>Free for planners. Paid by suppliers.</h2>
+          <p>
+            The consumer tool creates intent-rich quote requests. Suppliers pay for
+            verified leads, priority matching and storefront inventory sync.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <p class="mini-label">Starter</p>
+            <h3>$49</h3>
+            <p>Monthly listing for one city and one category.</p>
+            <a href="#quotes">Join waitlist</a>
+          </article>
+          <article class="price-card featured">
+            <p class="mini-label">Partner</p>
+            <h3>$149</h3>
+            <p>Priority supplier cards, lead routing and package highlights.</p>
+            <a href="#quotes">Request access</a>
+          </article>
+          <article class="price-card">
+            <p class="mini-label">Inventory</p>
+            <h3>$299</h3>
+            <p>Product sync, quote analytics and multi-city matching.</p>
+            <a href="#quotes">Talk to us</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="quote-section product-tile-dark-2" id="quotes">
+        <div class="quote-copy">
+          <p class="eyebrow">Quote capture</p>
+          <h2>Turn a recommendation into supplier revenue.</h2>
+          <p>
+            The lead form can route requests by city, budget, event type and equipment category.
+          </p>
+        </div>
+
+        <form class="quote-form" id="quoteForm">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Alex Chen" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="alex@example.com" />
+          </label>
+          <label>
+            <span>Phone</span>
+            <input type="tel" name="phone" placeholder="+61 400 000 000" />
+          </label>
+          <label>
+            <span>Event date</span>
+            <input type="date" name="date" />
+          </label>
+          <label>
+            <span>Suburb</span>
+            <input type="text" name="suburb" placeholder="Parramatta, NSW" />
+          </label>
+          <label class="wide">
+            <span>Notes</span>
+            <textarea name="notes" rows="4" placeholder="Reception room, speeches, dance floor and warm lighting."></textarea>
+          </label>
+          <button class="button" id="quoteButton" type="button">Prepare quote request</button>
+          <div class="quote-result" id="quoteResult" aria-live="polite" hidden></div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>EventRig AU</strong>
+        <p>Lighting, audio and supplier matching for Australian events.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#advisor">Setup advisor</a>
+        <a href="#suppliers">Supplier matching</a>
+        <a href="#pricing">Supplier plans</a>
+        <a href="#quotes">Quote capture</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="suppliers.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
